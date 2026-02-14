@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Navbar Layout</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-3">
+
+        <!-- User Profile (Left Side) -->
+        <div class="d-flex align-items-center text-white me-4">
+            <img src="favicon.ico" class="rounded-circle me-2" alt="User Image" width="50" height="50" />
+            <div class="lh-sm">
+                <div class="fw-bold">userId : {{userId}}</div>
+                <small>username : {{name}}</small>
+            </div>
+        </div>
+
+        <!-- Toggle Button (Mobile) -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar Items -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Dashboard</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Reports</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Settings</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="image-marquee">
+        <div class="image-track">
+            <img src="ANI-20250412055906.jpg" alt="img">
+            <img src="OIP.webp" alt="img">
+            <img src="photo1.jpg" alt="img">
+            <img src="photo2.jpg" alt="img">
+            <img src="photo3.jpg" alt="img">
+            <img src="photo4.jpg" alt="img">
+        </div>
+    </div>
+    <section class="tribute-section">
+        <h2 class="section-title">
+            Vanjeevi Ramayya – The Green Crusader of Telangana
+        </h2>
+
+        <div class="tribute-row">
+            <div class="side-heading">Who He Is</div>
+            <div class="content">
+                <p>
+                    Vanjeevi Ramayya is a renowned Indian environmentalist, widely known as the
+                    <strong>“Green Crusader of Telangana.”</strong> Born in 1935 in Telangana, India,
+                    he is a former soldier who later dedicated his entire life to tree plantation
+                    and environmental protection. He spent decades traveling from village to village,
+                    inspiring communities to protect nature and promote greenery.
+                </p>
+            </div>
+        </div>
+
+        <div class="tribute-row">
+            <div class="side-heading">His Contribution</div>
+            <div class="content">
+                <p>
+                    Over his lifetime, Ramayya planted and helped protect millions of trees across
+                    Telangana and neighboring regions. He motivated students, farmers, government
+                    officials, and villagers to actively participate in afforestation initiatives.
+                </p>
+                <p>
+                    His efforts focused on roadside plantations, restoration of degraded lands,
+                    and conducting environmental awareness campaigns to instill responsibility
+                    toward nature in society.
+                </p>
+            </div>
+        </div>
+
+        <div class="tribute-row">
+            <div class="side-heading">Awards & Recognition</div>
+            <div class="content">
+                <p>
+                    In recognition of his exceptional contribution to environmental conservation,
+                    Vanjeevi Ramayya was honored with the
+                    <strong>Padma Shri Award in 2017</strong>, one of India’s highest civilian honors.
+                    He was also recognized by multiple environmental organizations and state governments
+                    for his lifelong service to nature.
+                </p>
+            </div>
+        </div>
+
+        <div class="tribute-row">
+            <div class="side-heading">Why He Is Important</div>
+            <div class="content">
+                <p>
+                    Vanjeevi Ramayya proved that a single individual can create a massive and lasting
+                    environmental impact. His work inspired numerous green movements and eco-initiatives
+                    across India.
+                </p>
+                <p>
+                    He remains a powerful role model for initiatives related to tree registration,
+                    compensatory plantation, and community-driven environmental action.
+                </p>
+            </div>
+        </div>
+    </section>
+    <div class="main-card">
+        <div class="card">
+            <img src="tree-cutting-notches.jpg" alt="image" class="card-img-top">
+            <div class="card-body">
+                <h5 class="card-title">Register Cutting Trees</h5>
+                <p class="card-text">Organizations and individuals are required to register trees being cut to ensure
+                    compensatory plantation.</p>
+                <a routerLink='/register-to-cut-tree' class="btn btn-primary">Register</a>
+            </div>
+
+        </div>
+        <div class="card">
+            <img src="children-planting-tree-stockcake.webp" alt="image" class="card-img-top">
+            <div class="card-body">
+                <h5 class="card-title">Register for plantation</h5>
+                <p class="card-text">For each tree that is cut, four trees will be planted as part of our sustainability
+                    initiative.
+                </p>
+                <a routerLink='/register-to-plantation' class="btn btn-primary">Plant a Tree</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="growingStatus.jpg" alt="image" class="card-img-top">
+            <div class="card-body">
+                <h5 class="card-title">Your Trees and Status</h5>
+                <p class="card-text">Check the status of your trees, including their health and location.</p>
+                <a routerLink='/tree-status' class="btn btn-primary">Check Status</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="giphy.gif" alt="image" class="card-img-top">
+            <div class="card-body">
+                <h5 class="card-title">Donations</h5>
+                <p class="card-text">Individuals can support protection and plantation efforts through voluntary funding
+                    and donations based on their interests.</p>
+                <a routerLink='/donation' class="btn btn-primary">Donate</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

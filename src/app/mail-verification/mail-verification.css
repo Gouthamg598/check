@@ -1,0 +1,80 @@
+form {
+    max-width: 420px;
+    margin: 60px auto;
+    padding: 25px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: #333;
+}
+
+input[type="email"],
+input[type="number"] {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus {
+    outline: none;
+    border-color: #1976d2;
+    box-shadow: 0 0 4px rgba(25, 118, 210, 0.4);
+}
+
+/* Buttons */
+button {
+    padding: 10px 18px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+button[type="submit"] {
+    background-color: #1976d2;
+    color: #fff;
+}
+
+button[type="submit"]:hover {
+    background-color: #155fa0;
+}
+
+button[type="button"] {
+    background-color: #e0e0e0;
+    color: #333;
+}
+
+button[type="button"]:hover {
+    background-color: #cfcfcf;
+}
+
+/* Validation styles */
+input.ng-invalid.ng-touched {
+    border-color: #e53935;
+}
+
+input.ng-valid.ng-touched {
+    border-color: #43a047;
+}
+
+/* Mobile responsive */
+@media (max-width: 480px) {
+
+    form {
+        margin: 30px 15px;
+    }
+}

@@ -1,0 +1,85 @@
+/* Container */
+body {
+    background: #1b5e20;
+
+}
+
+.login-form {
+    width: 380px;
+    margin: 60px auto;
+    padding: 50px;
+    border-radius: 10px;
+    background: #ffffff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+/* Form Group */
+.form-group {
+    margin-bottom: 18px;
+}
+
+/* labels */
+.login-form label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: #333;
+}
+
+/* Inputs */
+.login-form input[type="text"],
+.login-form input[type="password"],
+.login-form input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+.login-form input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 4px rgba(0, 123, 255, 0.3);
+    outline: none;
+}
+
+/* Buttons */
+.login-form button {
+    padding: 10px 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+    margin-right: 10px;
+}
+
+/* Submit Button */
+.login-form button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    transition: 0.2s;
+}
+
+.login-form button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Reset Button */
+.login-form button[type="button"] {
+    background-color: #6c757d;
+    color: #fff;
+}
+
+.login-form button[type="button"]:hover {
+    background-color: #545b62;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+    .login-form {
+        width: 90%;
+        padding: 20px;
+    }
+}

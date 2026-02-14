@@ -1,0 +1,111 @@
+<div class="register-form">
+    <h2>Registration</h2>
+    <form (ngSubmit)="onSubmit(f)" #f="ngForm" novalidate>
+        <!-- Full Name -->
+        <div class="form-group">
+            <label>Full Name</label>
+            <input type="text" class="form-control" name="fullname" [(ngModel)]="register.fullName" #fullname="ngModel"
+                required>
+            <div class="text-danger" *ngIf="fullname.invalid && (fullname.touched || f.submitted)">
+                Full Name is required
+            </div>
+        </div>
+
+        <!-- Email -->
+        <div class="form-group">
+            <label>Email</label>
+            <input type="email" class="form-control" name="email" [(ngModel)]="register.email" #email="ngModel"
+                required>
+            <div class="text-danger" *ngIf="email.invalid && (email.touched || f.submitted)">
+                Valid Email is required
+            </div>
+        </div>
+
+        <!-- Mobile -->
+        <div class="form-group">
+            <label>Mobile No</label>
+            <input type="number" class="form-control" name="mobile" [(ngModel)]="register.phone" #mobile="ngModel"
+                required>
+            <div class="text-danger" *ngIf="mobile.invalid && (mobile.touched || f.submitted)">
+                Mobile number is required
+            </div>
+        </div>
+
+        <!-- Password -->
+        <div class="form-group">
+            <label>Password</label>
+            <input type="password" class="form-control" name="password" [(ngModel)]="register.password"
+                #password="ngModel" (keyup)="checkpws()" required>
+            <div class="text-danger" *ngIf="password.invalid && (password.touched || f.submitted)">
+                Password is required
+            </div>
+        </div>
+
+        <!-- Confirm Password -->
+        <div class="form-group">
+            <label>Confirm Password</label>
+            <input type="password" class="form-control" name="confirmPassword" [(ngModel)]="confirmPassword"
+                #confirmPasswordRef="ngModel" (keyup)="checkpws()" required>
+            <div class="text-danger" *ngIf="confirmPasswordRef.invalid && (confirmPasswordRef.touched || f.submitted)">
+                Confirm Password is required
+            </div>
+            <div class="text-danger" *ngIf="passwordMismatch">
+                Passwords do not match
+            </div>
+        </div>
+
+        <!-- Address -->
+        <div class="form-group">
+            <label>Street</label>
+            <input type="text" class="form-control" name="street" [(ngModel)]="register.address.street"
+                #street="ngModel" required>
+            <div class="text-danger" *ngIf="street.invalid && (street.touched || f.submitted)">
+                Street is required
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label>City</label>
+            <input type="text" class="form-control" name="city" [(ngModel)]="register.address.city" #city="ngModel"
+                required>
+            <div class="text-danger" *ngIf="city.invalid && (city.touched || f.submitted)">
+                City is required
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label>State</label>
+            <input type="text" class="form-control" name="state" [(ngModel)]="register.address.state" #state="ngModel"
+                required>
+            <div class="text-danger" *ngIf="state.invalid && (state.touched || f.submitted)">
+                State is required
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label>Zip Code</label>
+            <input type="number" class="form-control" name="zipCode" [(ngModel)]="register.address.zipCode"
+                #zipCode="ngModel" required>
+            <div class="text-danger" *ngIf="zipCode.invalid && (zipCode.touched || f.submitted)">
+                Zip Code is required
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label>Country</label>
+            <input type="text" class="form-control" name="country" [(ngModel)]="register.address.country"
+                #country="ngModel" required>
+            <div class="text-danger" *ngIf="country.invalid && (country.touched || f.submitted)">
+                Country is required
+            </div>
+        </div>
+
+        <!-- Buttons -->
+        <div class="form-group">
+            <button type="submit" [disabled]="f.invalid || passwordMismatch " class="btn btn-primary">
+                Register
+            </button>
+            <button type="button" (click)="onReset(f)" class="btn btn-secondary">Reset</button>
+        </div>
+    </form>
+</div>

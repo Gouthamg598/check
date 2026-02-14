@@ -1,0 +1,70 @@
+.register-form {
+    width: 400px;
+    margin: 40px auto;
+    padding: 25px 50px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+.register-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 22px;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    font-weight: 600;
+    display: block;
+    margin-bottom: 6px;
+    color: #444;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+    transition: border-color 0.2s ease;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0px 0px 4px rgba(0, 123, 255, 0.3);
+}
+
+.form-group button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 10px;
+    width: 120px;
+}
+
+.form-group button[type="submit"] {
+    background-color: #007bff;
+    color: white;
+}
+
+.form-group button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.form-group button[type="button"] {
+    background-color: #6c757d;
+    color: white;
+}
+
+.form-group button[type="button"]:hover {
+    background-color: #545b62;
+}
